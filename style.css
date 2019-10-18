@@ -1,0 +1,193 @@
+@font-face {
+  font-family:"marvel";
+  src: url("Marvel-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+hr {
+  border-color: #DA3831;
+  margin: 25px 10px;
+
+}
+
+h1{
+  color:white;
+}
+.marvel-logo {
+    font-family: "marvel";
+    color:white;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+main {
+  min-height: 500px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  box-shadow: 5px 10px 8px #888888;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #DA3831;
+  background-position: center;
+  background-size: cover;
+}
+
+.below{
+  position: relative;
+  z-index: 0;
+}
+aside {
+  background-color: black;
+  color:white;
+  height: 100%;
+  width: 30%;
+  transition: all 0.5s ease;
+  box-shadow: 5px 10px 8px #888888;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  overflow:scroll;
+}
+
+
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  box-shadow: 5px 10px 8px #888888;
+  background-color: #DA3831;
+  padding-left: 50px;
+  font-family: "marvel";
+}
+
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin: 20px;
+}
+
+.menu-icon:hover{
+  transform: scale(1.5);
+  transition: all 0.1s ease;
+}
+
+aside > ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width:100%;
+  height: auto;
+}
+
+li {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+footer {
+    box-shadow: 5px 10px 8px #888888;
+    width: 100%;
+    position: relative;
+    background:black;
+    z-index: 0;
+    text-align: center;
+}
+
+.description {
+  color:white;
+  background-color:rgba(255,0,0,0.9);
+  margin: 0;
+  padding: 25px;
+  width: 100%;
+}
+
+.char-name{
+  margin: 0;
+  background-color:rgba(255,0,0,0.5);
+  width: 100%;
+}
+
+.hide {
+width: 0px;
+transition: all 0.5s ease;
+overflow-x: hidden;
+}
+
+.hide-element{
+  visibility:hidden;
+}
+
+button{
+  display: inline-block;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.next-button {
+
+}
+
+.back-button {
+
+
+}
+
+.height {
+  height: 100%;
+}
+
+.width {
+  width: 100%;
+}
+
+.show {
+  width: 40%;
+  transition: all 0.5s ease;
+}
+@media only screen and (max-width: 600px) {
+  aside {
+    width: 60%;
+  }
+}
