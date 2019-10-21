@@ -105,6 +105,7 @@ function menuCharacters(characters){
 }
 
 function selectCharacter(char){
+  console.log(this);
   toggleMenu();
   let mainIsHidden = getComputedStyle(main).visibility==="hidden";
   console.log(mainIsHidden);
